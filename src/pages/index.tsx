@@ -13,7 +13,9 @@ const index = () => {
       </Head>
       {/* <Nav /> */}
 
-      <section className="mx-auto max-w-screen-xl">{/* <Display /> */}</section>
+      {/* <section className="mx-auto max-w-screen-xl">
+        <Display />
+      </section> */}
     </>
   );
 };
