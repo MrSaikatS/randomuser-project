@@ -1,7 +1,8 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@5.0.2
+  # node: circleci/node@5.0.2
+  codecov: codecov/codecov@4.0.1
 
 jobs:
   prod-build:
@@ -15,6 +16,10 @@ jobs:
           command: npm run build
 
 workflows:
+  upload-to-codecov:
+    jobs:
+      - checkout
+      - codecov/upload
   prod-build-workflow:
     jobs:
       - prod-build
