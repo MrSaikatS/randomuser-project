@@ -1,0 +1,20 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  prod-build:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: "npm"
+      - run:
+          name: Build the app
+          command: npm run build
+
+workflows:
+  prod-build-workflow:
+    jobs:
+      - prod-build
