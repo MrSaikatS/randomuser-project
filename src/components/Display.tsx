@@ -1,10 +1,10 @@
+import { numAtom } from "@/utils/atoms";
+import { ApiArrType } from "@/utils/types";
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { useAtom } from "jotai";
 import LoadingCard from "./LoadingCard";
 import UserCard from "./UserCard";
-import axios from "axios";
-import { ApiArrType } from "@/utils/types";
-import { useAtom } from "jotai";
-import { numAtom } from "@/utils/atoms";
 
 const Display = () => {
   const [num, setNum] = useAtom(numAtom);
@@ -30,7 +30,7 @@ const Display = () => {
   if (isLoading || isFetching) {
     return (
       <>
-        <div className="my-4 grid grid-cols-3 gap-8">
+        <div className="mx-auto my-4 grid max-w-xs grid-cols-1 gap-8 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
           <LoadingCard />
           <LoadingCard />
           <LoadingCard />
@@ -42,7 +42,7 @@ const Display = () => {
   if (isFetched && isSuccess) {
     return (
       <>
-        <div className="my-4 grid grid-cols-3 gap-8">
+        <div className="mx-auto my-4 grid max-w-xs grid-cols-1 gap-8 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
           {data.map((item) => {
             return <UserCard key={item.login.uuid} info={item} />;
           })}

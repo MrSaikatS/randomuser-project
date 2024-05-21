@@ -1,6 +1,5 @@
 import Display from "@/components/Display";
 import Nav from "@/components/Nav";
-
 import Head from "next/head";
 
 const index = () => {
@@ -12,7 +11,7 @@ const index = () => {
 
       <Nav />
 
-      <section className="mx-auto max-w-screen-xl">
+      <section className="container mx-auto max-w-screen-xl">
         <Display />
       </section>
     </>
