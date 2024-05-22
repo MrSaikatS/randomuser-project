@@ -39,7 +39,7 @@ const Nav = () => {
 
     setNum(fData.userNumber);
 
-    console.log(fData);
+    // console.log(fData);
 
     setIsMenuOpen(false);
 
@@ -58,11 +58,11 @@ const Nav = () => {
       >
         <NavbarBrand className="text-2xl font-bold">RandomUser V2</NavbarBrand>
 
-        <NavbarContent justify="end">
+        <NavbarContent justify="end" className="sm:hidden">
           <NavbarMenuToggle />
         </NavbarContent>
 
-        <NavbarContent justify="end" className="hidden">
+        <NavbarContent justify="end" className="hidden sm:flex">
           <NavbarItem>
             <form
               onSubmit={handleSubmit(setUserNumberFn)}
@@ -95,7 +95,7 @@ const Nav = () => {
           </NavbarItem>
         </NavbarContent>
 
-        <NavbarMenu className="items-center justify-center gap-4">
+        <NavbarMenu className="items-center justify-center gap-8">
           <NavbarMenuItem>
             <form
               onSubmit={handleSubmit(setUserNumberFn)}
