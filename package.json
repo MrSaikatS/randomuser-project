@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hookform/resolvers": "3.3.4",
+    "@hookform/resolvers": "3.4.2",
     "@nextui-org/button": "2.0.31",
     "@nextui-org/card": "2.0.28",
     "@nextui-org/image": "2.0.27",
