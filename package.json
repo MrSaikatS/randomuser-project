@@ -21,7 +21,7 @@
     "@tanstack/react-query": "5.37.1",
     "axios": "1.7.2",
     "framer-motion": "11.1.9",
-    "jotai": "2.8.0",
+    "jotai": "2.9.2",
     "lucide-react": "0.382.0",
     "next": "14.2.3",
     "react": "18",
