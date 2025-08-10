@@ -11,7 +11,7 @@
   "dependencies": {
     "@hookform/resolvers": "3.4.2",
     "@nextui-org/button": "2.0.31",
-    "@nextui-org/card": "2.0.28",
+    "@nextui-org/card": "2.2.9",
     "@nextui-org/image": "2.0.27",
     "@nextui-org/input": "2.1.21",
     "@nextui-org/navbar": "2.0.36",
